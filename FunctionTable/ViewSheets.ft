@@ -1,0 +1,33 @@
+#----------------------------------------------------------
+#  ViewSheets NET-Hook example
+#----------------------------------------------------------
+#
+# Notes: This FT file MUST be located in the CHooks folder.
+#
+#----------------------------------------------------------
+
+#----------------------
+# ASSIGN A UNIQUE NAME
+#----------------------
+APPLICATION "CSharpViewSheetExample"
+
+#--------------------
+# Customize CATEGORY
+#--------------------
+CATEGORY   "API Samples"
+
+#------------------
+# NETHook LOCATION
+#------------------
+FUNC_DLL   "CHOOKS\ViewSheets.dll"
+RES_DLL    "SAME"
+dnRES_NAME "ViewSheets.FunctionTable.Resource"
+
+#-------------------------------
+# Public function (entry point)
+#-------------------------------
+FUNCTION NET "Run"
+  dnTIP  "TipString"
+  dnSBMP "icon16"
+  dnLBMP "icon24"
+END_FUNCTION
